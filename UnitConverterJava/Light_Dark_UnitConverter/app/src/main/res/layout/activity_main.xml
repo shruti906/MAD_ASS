@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/windowBackground"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_gravity="center"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/inputValue"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_value"
+        android:inputType="numberDecimal"
+        android:autofillHints="postalAddress"
+        android:importantForAutofill="yes"
+        android:textColorHint="?android:attr/textColorHint"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <Spinner
+        android:id="@+id/fromUnit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <Spinner
+        android:id="@+id/toUnit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/convert" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/settings" />
+
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Dark Mode"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
